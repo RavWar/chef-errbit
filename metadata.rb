@@ -1,16 +1,16 @@
-name             "errbit"
-maintainer       "Sachin Sagar Rai"
-maintainer_email "millisami@gmail.com"
-license          "All rights reserved"
-description      "Installs/Configures errbit"
+name             'errbit'
+maintainer       'Sachin Sagar Rai'
+maintainer_email 'millisami@gmail.com'
+license          'All rights reserved'
+description      'Installs/Configures errbit'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          "0.4.0"
+version          '0.4.0'
 
-depends          "mongodb"
-depends          "git"
-depends          "unicorn"
-depends          "apt"
-depends          "nginx"
-depends          "build-essential"
-
-supports         "ubuntu"
+depends 'mongodb'
+depends 'unicorn'
+depends 'build-essential'
+depends 'chruby', '~> 0.2'
+depends 'nginx', '~> 1.7'
+depends 'user', '~> 0.3'
+depends 'git', '~> 2.5'
+depends 'apt', '~> 2.0'
