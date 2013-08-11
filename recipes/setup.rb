@@ -4,8 +4,12 @@ node.set['build_essential']['compiletime'] = true
 include_recipe 'build-essential'
 
 include_recipe 'git'
-include_recipe 'nginx'
 include_recipe 'user'
+include_recipe 'nginx'
+
+nginx_site 'default' do
+  enable false
+end
 
 user_account node['errbit']['user'] do
   password node['errbit']['password']
