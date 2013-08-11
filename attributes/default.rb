@@ -33,7 +33,7 @@ default['errbit']['db']['username']  = ''
 default['errbit']['db']['password']  = ''
 
 default[:unicorn][:worker_timeout]   = 60
-default[:unicorn][:worker_processes] = 2 #[node[:cpu][:total].to_i * 4, 8].min
+default[:unicorn][:worker_processes] = 4 #[node[:cpu][:total].to_i * 4, 8].min
 default[:unicorn][:preload_app]      = false
 default[:unicorn][:tcp_nodelay]      = true
 default[:unicorn][:backlog]          = 100
